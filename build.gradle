@@ -6,7 +6,6 @@ group 'ru.topacademy'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
-// кодировка файлов (если используете русский язык в файлах)
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
@@ -15,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.7.0'
 }
